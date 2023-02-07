@@ -8,6 +8,9 @@ def negate_list(lst):
     # After running your code, variable n should contain the value
     # we ask you to compute in this exercise
     new_lst = None
+    for num in lst: 
+        num = num * -1
+        new_lst.append(num)
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return new_lst
