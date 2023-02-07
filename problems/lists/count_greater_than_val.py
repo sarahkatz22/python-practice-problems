@@ -8,6 +8,13 @@ def count_greater_than_val(lst, val):
     # After running your code, variable n should contain the value
     # we ask you to compute in this exercise.
     n = None
+    
+     if lst == []:
+        return n = 0
+    else: 
+        for num in lst:
+            if num > val: 
+                n += 1
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return n
