@@ -1,3 +1,14 @@
+def num_counter(lst, num): 
+    """
+    Counts how many times a lst contains a specific value. 
+    """
+    counter = 0 
+    for val in lst: 
+        if val == num: 
+            counter += 1
+    
+    return counter
+
 def has_more(lst1, lst2, target):
     """
     Determine which list contains more of the target value
@@ -9,7 +20,13 @@ def has_more(lst1, lst2, target):
     """
 
     ### Replace pass with your code
-    pass
+    lst1_num = num_counter(lst1, target) 
+    lst2_num = num_counter(lst2, target) 
+    
+    if lst1_num > lst2_num: 
+        Return True 
+    else: 
+        Return False
 
 
 #############################################################
